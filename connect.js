@@ -10,3 +10,9 @@ const main = async () => {
     console.log("Successfully connected to Terra node");
     return terra;
 }
+
+main().then((resp) => {
+    console.log(resp);
+}).catch((err) => {
+    console.error(err);
+})
