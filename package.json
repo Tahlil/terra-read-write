@@ -1,0 +1,23 @@
+{
+  "name": "terra-read-write",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tahlil/terra-read-write.git"
+  },
+  "keywords": [
+    "Terra",
+    "blockchain"
+  ],
+  "author": "Tahlil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tahlil/terra-read-write/issues"
+  },
+  "homepage": "https://github.com/Tahlil/terra-read-write#readme"
+}
