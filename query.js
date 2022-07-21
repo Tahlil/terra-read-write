@@ -13,6 +13,9 @@ const main = async () => {
 
     let blockInfo = await terra.tendermint.blockInfo();
     console.log("Block info", blockInfo);
+
+    let nodeInfo = await terra.tendermint.nodeInfo();
+    console.log("Block info", nodeInfo);
   
 }
 
