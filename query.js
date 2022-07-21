@@ -24,7 +24,10 @@ const main = async () => {
     console.log("Account info", accountInfo);
 
     const exchangeRates = await terra.oracle.exchangeRates();
-    console.log(exchangeRates);
+    console.log("Exchange rates", exchangeRates);
+
+    const proposals = await terra.gov.proposals();
+    console.log("Proposals", proposals);
   
 }
 
