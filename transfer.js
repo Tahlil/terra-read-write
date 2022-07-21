@@ -21,6 +21,8 @@ const main = async () => {
         memo: "Memo: sending 2 Luna"
     });
 
+    const txReciept = await terra.tx.broadcast(tx);
+
   
 }
 
