@@ -21,7 +21,16 @@ const main = async () => {
         memo: "Memo: sending 2 Luna"
     });
 
-    const txReciept = await terra.tx.broadcast(tx);
+    const txReceipt = await terra.tx.broadcast(tx);
+
+    if (isTxError(txReceipt)) {
+        console.error(txReceipt);
+        throw new Error("Could not send tx");
+    } 
+    
+    console.log("Result Logs:", txReceipt.logs);
+
+
 
   
 }
