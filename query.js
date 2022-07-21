@@ -10,6 +10,9 @@ const main = async () => {
     const mk = new MnemonicKey({
         mnemonic: process.env.MNEMONIC
     });
+
+    let blockInfo = await terra.tendermint.blockInfo();
+    console.log("Block info", blockInfo);
   
 }
 
