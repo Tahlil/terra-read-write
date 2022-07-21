@@ -22,6 +22,9 @@ const main = async () => {
 
     const accountInfo = await terra.auth.accountInfo(mk.accAddress);
     console.log("Account info", accountInfo);
+
+    const exchangeRates = await terra.oracle.exchangeRates();
+    console.log(exchangeRates);
   
 }
 
