@@ -14,6 +14,13 @@ const main = async () => {
     const wallet = terra.wallet(mk);
     const toAddress = "terra1zw6j7cc2x8xr5gx4h6ngj2aczw0nr7rj08upxl";
 
+    const msg = MsgSend(wallet.key.accAddress, toAddress, {uluna: 2000000});
+
+    const tx = await wallet.createAndSignTx({
+        msgs: [msg],
+        memo: "Memo: sending 2 Luna"
+    });
+
   
 }
 
