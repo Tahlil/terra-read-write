@@ -15,10 +15,10 @@ const main = async () => {
     console.log("Block info", blockInfo);
 
     const nodeInfo = await terra.tendermint.nodeInfo();
-    console.log("Block info", nodeInfo);
+    console.log("Node info", nodeInfo);
 
     const validatorSet = await terra.tendermint.validatorSet();
-    console.log("Block info", validatorSet);
+    console.log("Validator set", validatorSet);
 
     const accountInfo = await terra.auth.accountInfo(mk.accAddress);
     console.log("Account info", accountInfo);
