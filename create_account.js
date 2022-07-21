@@ -9,6 +9,7 @@ const main = async () => {
     });
     const mk = new MnemonicKey();
     console.log(mk.accAddress);
+    console.log(mk.mnemonic);
 }
 
 main().then((resp) => {
