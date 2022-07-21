@@ -11,11 +11,14 @@ const main = async () => {
         mnemonic: process.env.MNEMONIC
     });
 
-    let blockInfo = await terra.tendermint.blockInfo();
+    const blockInfo = await terra.tendermint.blockInfo();
     console.log("Block info", blockInfo);
 
-    let nodeInfo = await terra.tendermint.nodeInfo();
+    const nodeInfo = await terra.tendermint.nodeInfo();
     console.log("Block info", nodeInfo);
+
+    const validatorSet = await terra.tendermint.validatorSet();
+    console.log("Block info", validatorSet);
   
 }
 
